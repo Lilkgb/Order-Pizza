@@ -9,10 +9,38 @@
     <title>E</title>
   </head>
   <body>
-    <div class="container">
-      <div class="Jumbotron">
+    <div class="container-fluid header">
+      <div class="jumbotron" id="header">
+        <img src="img/pizzaLogo.png" alt="A picture of Peter Griffin from family guy holding a pizza" class="img-responsive img-header" id="logo" style="float: right;">
         <h1>Every Pizza Place</h1>
-        <img src="img/pizzaLogo.png" alt="A picture of Peter Griffin from family guy holding a pizza" class="img-responsive img-thumbnail">
+        <br>
+        <p>Make your custom pizza below:</p>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <div class="panel panel-default panel-custom">
+            <div class="panel-body">
+              <div class="col-md-2">
+                <h3>Size:</h3>
+              </div>
+            <div class="col-md-10">
+              <form id="pizzaSize">
+                <label class="radio-inline">
+                  <input type="radio" name="pizza-size" id="size-small" value="small" checked> Small
+                </label>
+                <label class="radio-inline">
+                  <input type="radio" name="pizz-size" id="size-medium" value="medium"> Medium
+                </label>
+                <label class="radio-inline">
+                  <input type="radio" name="pizz-size" id="size-large" value="large"> Large
+                </label>
+              </form>
+            </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </body>
