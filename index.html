@@ -21,19 +21,33 @@
       <div class="jumbotron">
       <form id="pizza-size">
         <label for="size">What size would you like?</label>
-        <input type="radio" name="pizza-size" value="small"> Small
-        <input type="radio" name="pizza-size" value="medum"> Medium
-        <input type="radio" name="pizza-size" value="large"> Large
+        <input type="radio" name="pizza-size" value="Small"> Small
+        <input type="radio" name="pizza-size" value="Medium"> Medium
+        <input type="radio" name="pizza-size" value="Large"> Large
       </form>
       </div>
       <div class="jumbotron">
-      <form>
+      <form id="pizza-crust">
         <label for="crust">What kind of crust would you like?</label>
-        <input type="radio" name="pizza-crust" value="regular"> Regular
-        <input type="radio" name="pizza-crust" value="cheesy"> Cheesy
-        <input type="radio" name="pizza-crust" value="thin"> Thin
+        <input type="radio" name="pizza-crust" value="Regular"> Regular
+        <input type="radio" name="pizza-crust" value="Cheesy"> Cheesy
+        <input type="radio" name="pizza-crust" value="Thin"> Thin
       </form>
       </div>
+      <div class="jumbotron">
+        <div class="toppings">
+          <h2>Select Your Toppings:</h2>
+            <label for="pepperoni"><img src="img/Pepperoni.png" alt="a pepperoni" id="pepperoniPicture"></label>
+              <input type="checkbox" name="toppings" value="Pepperoni" id=pepperoni>Pepperoni
+            <label for="jalapeno"><img src="img/jalapeno.png" alt="a picture of a jalapeno" id="jalapenoPicture"></label>
+              <input type="checkbox" name="toppings" value="Jalapeno" id=jalapeno> Jalapeno
+            <label for="onion"><img src="img/onion.png" alt="picture of a bellpepper" id="onionPicture"></label>
+              <input type="checkbox" name="toppings" value="Onion"> Onion
+            <label for="bellPepper"><img src="img/bellPepper.png" alt="picture of a bell pepper" id="bellPicture"></label>
+              <input type="checkbox" name="toppings" value="BellPepper"> Bell Pepper
+        </div>
+      </div>
+      <button type="submit" class="btn btn-info">Submit</button>
     </div>
   </body>
 </html>
