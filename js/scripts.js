@@ -17,8 +17,13 @@ var toppings = {
 };
 
 $(document).ready(function() {
-  $("#custom-pizza").submit(function(event) {
+  $("#pizza-maker").submit(function(event) {
     event.preventDefault();
-    console.log("hello");
+    var newPizzaSize = $("input:radio[name=pizza-size]:checked").val();
+    var newpizzaCrust = $("input:radio[name=pizza-crust]:checked").val();
+    var newPizzaToppings = [];
+    $("input:checkbox[name=toppings]:checked").each(function(){
+       newPizzaToppings.push($(this).val());
+     });
   });
 });
