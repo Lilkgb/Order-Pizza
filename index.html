@@ -11,13 +11,13 @@
   <body>
     <div class="container-fluid header">
       <div class="jumbotron" id="header">
-        <img src="img/pizzaLogo.png" alt="A picture of Peter Griffin from family guy holding a pizza" class="img-responsive img-header" id="logo" style="float: right;">
+        <img src="img/pizzaLogo.png" alt="A picture of Peter Griffin from family guy holding a pizza" class="img-responsive img-header" id="logo">
         <h1>Every Pizza Place</h1>
         <br>
         <p>Make your custom pizza below:</p>
       </div>
     </div>
-    <div class="container">
+    <div class="container"> <!-- pizza size options -->
       <div class="row">
         <div class="col-md-8">
           <div class="panel panel-default panel-custom">
@@ -35,6 +35,32 @@
                 </label>
                 <label class="radio-inline">
                   <input type="radio" name="pizz-size" id="size-large" value="large"> Large
+                </label>
+              </form>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container"> <!-- crust options -->
+      <div class="row">
+        <div class="col-md-8">
+          <div class="panel panel-default panel-custom">
+            <div class="panel-body">
+              <div class="col-md-2">
+                <h3>Crust:</h3>
+              </div>
+            <div class="col-md-10">
+              <form id="pizzaCrust">
+                <label class="radio-inline">
+                  <input type="radio" name="pizza-crust" id="crust-regular" value="regular" checked> Regular
+                </label>
+                <label class="radio-inline">
+                  <input type="radio" name="pizz-crust" id="crust-cheesy" value="cheesy"> Cheesy
+                </label>
+                <label class="radio-inline">
+                  <input type="radio" name="pizz-crust" id="crust-thin" value="thin"> Thin
                 </label>
               </form>
             </div>
