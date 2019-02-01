@@ -4,7 +4,9 @@ function Pizza(size, toppings, cost) {
   this.cost = cost;
 }
 
-$(document).ready(function(event) {
-  event.preventDefault();
-  
+$(document).ready(function() {
+  $("#custom-pizza").submit(function(event) {
+    event.preventDefault();
+    console.log("hello");
+  });
 });
