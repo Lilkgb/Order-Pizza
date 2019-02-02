@@ -20,3 +20,6 @@
   height: 200px;
   length: 200px;
 }
+.order {
+  display: none;
+}
