@@ -49,7 +49,10 @@ $(document).ready(function() {
        newPizzaToppings.push($(this).val());
       });
     var donePizza = addPizzaOrder(newPizzaSize, newpizzaCrust, newPizzaToppings);
-    console.log(donePizza);
     console.log(finalOrder);
+    $("ul#order").append("<li>Your Order Total is: $"+newPizzaOrder.price+"</li>");
+    $("ul#order").append("<li>Piza size:  "+newPizzaOrder.pizzaSize+"</li>");
+    $("ul#order").append("<li>Crust chosen: "+newPizzaOrder.pizzaCrust+"</li>");
+    $("ul#order").append("<li>Toppings chosen: "+newPizzaOrder.pizzaToppings+"</li>");
   });
 });
