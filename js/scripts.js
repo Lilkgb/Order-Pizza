@@ -54,6 +54,7 @@ $(document).ready(function() {
     $("ul#order").append("<li>Pizza size:  "+newPizzaOrder.pizzaSize+"</li>");
     $("ul#order").append("<li>Crust chosen: "+newPizzaOrder.pizzaCrust+"</li>");
     $("ul#order").append("<li>Toppings chosen: "+newPizzaOrder.pizzaToppings+"</li>");
+    $("ul#order").append("<li>Total amount is:"+newPizzaOrder.totalPrice+"</li>");
     $("#pizza-maker").hide("slow");
     $(".order").show("slow");
   });
