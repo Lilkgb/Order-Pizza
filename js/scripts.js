@@ -4,7 +4,7 @@ function PizzaOrder(size, crust, toppings) {
   this.pizzaToppings = toppings;
   this.price = 0;
 }
-function OrderTotal () {
+function OrderTotal() {
   this.pizzas=[];
   this.totalPrice=0;
   this.orderedPizzas=0;
@@ -50,16 +50,26 @@ $(document).ready(function() {
       });
     var donePizza = addPizzaOrder(newPizzaSize, newpizzaCrust, newPizzaToppings);
     console.log(finalOrder);
-    $("ul#order").append("<li>Your Order Total is: $"+newPizzaOrder.price+"</li>");
-    $("ul#order").append("<li>Pizza size:  "+newPizzaOrder.pizzaSize+"</li>");
-    $("ul#order").append("<li>Crust chosen: "+newPizzaOrder.pizzaCrust+"</li>");
-    $("ul#order").append("<li>Toppings chosen: "+newPizzaOrder.pizzaToppings+"</li>");
-    $("ul#order").append("<li>Total amount is: $"+finalOrder.totalPrice+"</li>");
+    $("ul#order").append("<li>This pizza is: $"+newPizzaOrder.price+"</li><br>");
+    $("ul#order").append("<li>Pizza size:  "+newPizzaOrder.pizzaSize+"</li><br>");
+    $("ul#order").append("<li>Crust chosen: "+newPizzaOrder.pizzaCrust+"</li><br>");
+    $("ul#order").append("<li>Toppings chosen: "+newPizzaOrder.pizzaToppings+"</li><br>");
     $("#pizza-maker").hide("slow");
-    $(".order").show("slow");
+    $("#orderSummary").show("slow");
+  });
+  $("#anotherPizza").click(function() {
+    $("#pizza-maker").show("slow");
+    $("#orderSummary").hide("slow");
+  });
+  $("#totalOrder").click(function() {
+    $("#orderSummary").hide("slow");
+    $("#totalAmount").show("slow");
+    $(".totalForPizzas").text(finalOrder.totalPrice);
   });
   $("#reset").click(function() {
+    $("#totalAmount").hide("slow");
     $("#pizza-maker").show("slow");
-    $(".order").hide("slow");
+    finalOrder = new OrderTotal();
+    $("#order").text('');
   });
 });

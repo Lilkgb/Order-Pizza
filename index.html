@@ -44,12 +44,19 @@
         </div>
         <button type="submit" class="btn btn-info">Submit</button>
       </form>
-      <div class="order">
-        <div class="jumbotron">
+      <div>
+        <div class="jumbotron" id="orderSummary">
         <h1>Your Order is:</h1>
         <ul id="order">
         </ul>
-        <button type="click" name="button" id="reset">Order A New Pizza</button>
+        <button type="click" name="button" id="anotherPizza">Order Another New Pizza</button>
+        <button type="click" name="button" id="totalOrder">Confirm Order</button>
+      </div>
+      <div>
+        <div class="jumbotron" id="totalAmount">
+          <h1>Your Total Amount is: $<span class="totalForPizzas"></span> </h1>
+          <button type="submit" name="button" id="reset">Start Over</button>
+        </div>
       </div>
       </div>
     </div>

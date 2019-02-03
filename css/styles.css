@@ -20,6 +20,9 @@
   height: 200px;
   length: 200px;
 }
-.order {
+#orderSummary {
+  display: none;
+}
+#totalAmount {
   display: none;
 }
