@@ -10,7 +10,7 @@ function OrderTotal () {
   this.orderedPizzas=0;
 }
 var sizes = {
-  sizeOptions: ["Small", "Medium", "Thin"],
+  sizeOptions: ["Small", "Medium", "Large"],
   sizePrices: [7, 10, 13]
 };
 var crusts = {
@@ -51,7 +51,7 @@ $(document).ready(function() {
     var donePizza = addPizzaOrder(newPizzaSize, newpizzaCrust, newPizzaToppings);
     console.log(finalOrder);
     $("ul#order").append("<li>Your Order Total is: $"+newPizzaOrder.price+"</li>");
-    $("ul#order").append("<li>Piza size:  "+newPizzaOrder.pizzaSize+"</li>");
+    $("ul#order").append("<li>Pizza size:  "+newPizzaOrder.pizzaSize+"</li>");
     $("ul#order").append("<li>Crust chosen: "+newPizzaOrder.pizzaCrust+"</li>");
     $("ul#order").append("<li>Toppings chosen: "+newPizzaOrder.pizzaToppings+"</li>");
     $("#pizza-maker").hide("slow");
